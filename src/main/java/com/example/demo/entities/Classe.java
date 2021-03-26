@@ -24,7 +24,7 @@ public class Classe {
     @JoinColumn(name = "filiere_id")
     private Filiere filiere;
 
-    @OneToMany(mappedBy = "etudiant")
+    @OneToMany(mappedBy = "classe")
     private List<Etudiant> etudiants;
 
     public Classe() {
