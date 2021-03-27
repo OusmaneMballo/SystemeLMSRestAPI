@@ -11,7 +11,6 @@ import java.util.List;
 public interface ModuleRepository extends JpaRepository<Module, ID> {
     List<Module> findAll();
     Module findById(int id);
-
     @Override
     void delete(Module module);
 }

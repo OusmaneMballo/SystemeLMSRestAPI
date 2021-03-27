@@ -11,7 +11,7 @@ import java.util.List;
 public interface ClasseRepository extends JpaRepository<Classe, ID> {
 
     List<Classe> findAllByAnneeScolaire();
-    Classe findClasseById();
+    Classe findClasseById(int id);
     @Override
     void delete(Classe classe);
 }
